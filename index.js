@@ -13,7 +13,7 @@ for (let k = 0; k < 100000; k++) {
 const pi = (4 * sum).toFixed(n);
 
 const server = http.createServer((req, res) => {
-    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); 
     res.end(`
         <p>FIO: ${fio}</p>
         <p>Group: ${group}</p>
@@ -21,5 +21,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(3000, () => {
-    console.log("Сервер запущен!!");
+    console.log("Start server");
 });
